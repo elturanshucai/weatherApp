@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #89ba16;
+    width: 100%;
+    color: white;
+    justify-content: center;
+}
+@media screen and (max-width:650px) {
+    header{
+        font-size: 25px;
+    }
+}

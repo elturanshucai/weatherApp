@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 440px;
+    margin: 0 auto;
+}
+.search{
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+    height: 30px;
+    margin: 30px auto;
+    width: fit-content;
+}
+.search input{
+    border: 1px solid rgb(175, 175, 20);
+    outline: none;
+    padding: 6px;
+    padding-top: 4px;
+    font-size: 16px;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+    width: 150px;
+}
+.search button{
+    border: none;
+    outline: none;
+    padding:0 10px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    background-color: black;
+}
+.search button:hover{
+    background-color: blue;
+    transition: all 200ms;
+}
+main .title{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+main .about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.astronomy{
+    width: 440px;
+    margin: 30px auto;
+}
+.astronomy .astroinner{
+    justify-content: space-between;
+    display: flex;
+}
+.astroinner div{
+    width: 50%;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.astroinner div:first-child{
+    background-color: rgb(221, 221, 221);   
+}
+.astronomy .moon_ligth{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.astroinner div:last-child{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:650px) {
+    .container{
+        width: 300px;
+    }
+    .astronomy{
+        width: 90%;
+        font-size: 14px;
+    }
+    .astroinner div{
+        padding: 3px 5px;
+    }
+    .search input{
+        width: 100px;
+        padding: 3px;
+    }
+    .search button{
+        padding: 0 6px;
+    }
+    .search .searchIcon{
+        width: 12px;
+        height: 12px;
+    }
+}
